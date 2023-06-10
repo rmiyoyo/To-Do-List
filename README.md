@@ -96,7 +96,7 @@ Clone this repository to your desired folder:
 
 ```sh
 cd my-folder
-git clone git@github.com:rmiyoyo/To-do-List-Tool.git
+git clone git@github.com:rmiyoyo/To-Do-List.git
 ```
 
 ### Install
@@ -104,7 +104,7 @@ git clone git@github.com:rmiyoyo/To-do-List-Tool.git
 Install the prerequisites this project using:
 
 ```sh
-cd To-do-List-Tool
+cd To-Do-List
 npm init -y
 npm install --save-dev hint@7.x
 npm install --save-dev stylelint@13.x stylelint-scss@3.xstylelint-config-standard@21.x stylelint-csstree-validator@1.x

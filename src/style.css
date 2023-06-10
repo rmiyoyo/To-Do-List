@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-size: 1.1rem;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f5f5f5;
+  height: auto;
+}
+
+.todo-container {
+  width: 88%;
+  margin: 10% 5%;
+  box-shadow: 5px 11px 20px #ffe4e1;
+}
+
+.todolist-container {
+  background-color: #fff;
+}
+
+.title {
+  border-bottom: 2px solid #ffe4e1;
+  height: 44px;
+  align-items: center;
+  padding-left: 2%;
+}
+
+.title-container,
+.add-item {
+  position: relative;
+}
+
+.title-container i,
+.add-item i {
+  position: absolute;
+  color: #2f4f4f;
+  right: 3%;
+  top: 12%;
+  font-size: 16px;
+}
+
+.title-container i:hover,
+.add-item i:hover {
+  cursor: pointer;
+}
+
+.activity-desc {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #ffe4e1;
+  padding-left: 2%;
+}
+
+.activity-desc:focus {
+  outline: none;
+}
+
+.activity-desc::placeholder {
+  font-style: italic;
+}
+
+.activity-box {
+  border-bottom: 2px solid #ffe4e1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.activity-box:focus {
+  outline: none;
+  background-color: #008b8b;
+}
+
+.activity-description-box {
+  padding-left: 2%;
+  gap: 0.5rem;
+}
+
+.activity-box:hover {
+  cursor: pointer;
+}
+
+.periods {
+  gap: 0.2rem;
+  padding-right: 3%;
+}
+
+.period {
+  height: 5px;
+  width: 5px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.periods:hover {
+  cursor: url('../icons/pntr.png');
+}
+
+.periods:hover .period {
+  background-color: #ffe4e1;
+}
+
+.clear-list {
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe4e1;
+}
+
+.clear-list:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

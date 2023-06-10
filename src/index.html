@@ -3,28 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4a3fcfc5e4.js" crossorigin="anonymous"></script>
-    <title>To-do List</title>
-    <script defer src="runtime.bundle.js"></script>
-    <script defer src="main.bundle.js"></script>
+    <title>To-Do List</title>
 </head>
 
 <body>
-    <div class="todo-container">
-        <div class="todolist-container">
-            <div class="title-container">
-                <div class="title flex-row">Today's To Do</div>
+    <div class="activity-zone">
+        <div class="todo-container">
+            <div class="header-area">
+                <div class="app-header hrzntl">Today's To Do</div>
                 <i class="fa fa-refresh"></i>
             </div>
-            <div class="add-item">
-                <label for="fresh-add"></label>
-                <input type="text" id="fresh-add" placeholder="Add to your list" name="fresh-add" class="activity-desc">
-                <i class="fa-solid fa-turn-down fa-rotate-90"></i>
+            <div class="userArea">
+                <label for="activityDetails"></label>
+                <input id="activityDetails" type="text" placeholder="Add to your list" name="activity-details"
+                    class="description-input">
+                <p class="error-message"></p>
+                <i class="fa-solid fa-turn-down fa-rotate-90" id="activityCheck"></i>
             </div>
         </div>
-        <div type="button" class="clear-list flex-row">Clear All Completed</div>
+        <div class="delete-finished-activities hrzntl">Clear all completed</div>
     </div>
 </body>
 

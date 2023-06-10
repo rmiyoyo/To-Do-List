@@ -2,10 +2,10 @@
 
 * {
   box-sizing: border-box;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
-.flex-row {
+.hrzntl {
   display: flex;
   flex-direction: row;
 }
@@ -17,111 +17,143 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #f5f5f5;
+  background-color: #e0ffff;
   height: auto;
 }
 
+.activity-zone {
+  width: 90%;
+  margin: 8% 5%;
+  box-shadow: 9px 12px 21px #000;
+}
+
 .todo-container {
-  width: 88%;
-  margin: 10% 5%;
-  box-shadow: 5px 11px 20px #ffe4e1;
+  background-color: #faebd7;
 }
 
-.todolist-container {
-  background-color: #fff;
-}
-
-.title {
-  border-bottom: 2px solid #ffe4e1;
+.app-header {
+  border-bottom: 1px solid #708090;
   height: 44px;
   align-items: center;
-  padding-left: 2%;
+  padding-left: 1.9%;
 }
 
-.title-container,
-.add-item {
+.header-area,
+.userArea,
+.activity-area {
   position: relative;
 }
 
-.title-container i,
-.add-item i {
+i {
   position: absolute;
   color: #2f4f4f;
-  right: 3%;
-  top: 12%;
-  font-size: 16px;
+  right: 2.9%;
+  top: 15px;
+  font-size: 18px;
 }
 
-.title-container i:hover,
-.add-item i:hover {
+.header-area i,
+.userArea i {
+  right: 2.9%;
+}
+
+i:hover {
   cursor: pointer;
 }
 
-.activity-desc {
-  width: 100%;
-  height: 40px;
-  border: none;
-  border-bottom: 2px solid #ffe4e1;
-  padding-left: 2%;
+i.trash {
+  right: 8%;
 }
 
-.activity-desc:focus {
+i.edit {
+  right: 13%;
+}
+
+.description-input {
+  width: 100%;
+  height: 45px;
+  border: 0 solid #2f4f4f;
+  border-bottom: 1px solid #2f4f4f;
+  padding-left: 1.9%;
+}
+
+.error-message {
+  margin: 0;
+  color: red;
+  font-size: 0.9rem;
+  padding-left: 1.9%;
+  transition: visibility 6s;
+}
+
+.description-input:focus {
   outline: none;
 }
 
-.activity-desc::placeholder {
-  font-style: italic;
+.description-input::placeholder {
+  font-style: oblique;
 }
 
-.activity-box {
-  border-bottom: 2px solid #ffe4e1;
+.activity-area {
+  border-bottom: 1px solid #2f4f4f;
   align-items: center;
   justify-content: space-between;
 }
 
-.activity-box:focus {
+.activity-area:focus-within {
   outline: none;
-  background-color: #008b8b;
+  background-color: #708090;
 }
 
-.activity-description-box {
-  padding-left: 2%;
-  gap: 0.5rem;
+.activity-description-area {
+  padding-left: 1.9%;
+  gap: 0.6rem;
+  width: 75%;
 }
 
-.activity-box:hover {
+.activity-details {
+  width: 69%;
+  height: 45px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.activity-details:focus {
+  outline: none;
+}
+
+.mark-activity:hover {
   cursor: pointer;
 }
 
-.periods {
+.period-container {
   gap: 0.2rem;
   padding-right: 3%;
 }
 
 .period {
-  height: 5px;
-  width: 5px;
-  background-color: aquamarine;
+  height: 6px;
+  width: 6px;
+  background-color: #000;
   border-radius: 50%;
   display: inline-block;
 }
 
-.periods:hover {
-  cursor: url('../icons/pntr.png');
+.period-container:hover {
+  cursor: url('../icons/pntr.png'), move;
 }
 
-.periods:hover .period {
-  background-color: #ffe4e1;
+.period-container:hover .period {
+  background-color: #000;
 }
 
-.clear-list {
+.delete-finished-activities {
   height: 40px;
   align-items: center;
   justify-content: center;
-  background-color: #ffe4e1;
+  color: #000;
 }
 
-.clear-list:hover {
-  cursor: pointer;
+.delete-finished-activities:hover {
+  cursor: url('../icons/pntr.png'), move;
   text-decoration: underline;
 }

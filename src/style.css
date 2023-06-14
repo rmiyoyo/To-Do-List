@@ -24,11 +24,11 @@ body {
 .activity-zone {
   width: 90%;
   margin: 8% 5%;
-  box-shadow: 9px 12px 21px #000;
+  box-shadow: 20px 10px 21px #2F4F4F;
 }
 
 .todo-container {
-  background-color: #faebd7;
+  background-color: #D3D3D3;
 }
 
 .app-header {
@@ -113,8 +113,8 @@ i.edit {
 .activity-details {
   width: 69%;
   height: 45px;
-  margin: 0;
-  padding: 10px 0;
+  margin: 2px;
+  padding: 15px;
 }
 
 .activity-details:focus {
@@ -147,10 +147,10 @@ i.edit {
 }
 
 .delete-finished-activities {
-  height: 40px;
+  height: 50px;
   align-items: center;
   justify-content: center;
-  color: #000;
+  background-color: #708090;
 }
 
 .delete-finished-activities:hover {

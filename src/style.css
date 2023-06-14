@@ -24,11 +24,11 @@ body {
 .activity-zone {
   width: 90%;
   margin: 8% 5%;
-  box-shadow: 20px 10px 21px #2F4F4F;
+  box-shadow: 20px 10px 21px #2f4f4f;
 }
 
 .todo-container {
-  background-color: #D3D3D3;
+  background-color: #d3d3d3;
 }
 
 .app-header {

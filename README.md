@@ -70,8 +70,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- The website will be deployed in due course.
-<!-- - You can find the website [here](https://rmiyoyo.github.io/Awesome-Books-v2-With-ES6/) -->
+- You can find the website [here](https://rmiyoyo.github.io/To-Do-List/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

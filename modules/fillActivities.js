@@ -10,17 +10,26 @@ const fillActivities = (activities) => {
       }
     }
     if (activities[a].description !== '') {
-      activityContainer[
-        a
-      ].innerHTML = `<div class = "activity-description-area hrzntl">
-                                  <input class = "mark-activity" type = "checkBox">
+      activityContainer[a].innerHTML = `<div class = "activity-description-area hrzntl">
+                                <input class = "confirmChoice${activities[a].index} mark-activity" type = "checkbox">
                                   <p class = "d${activities[a].index} activity-details">${activities[a].description}</p>
                                 </div>
                                 <div class = "d${activities[a].index} display-periods period-container flex-column"><span class = "period"></span><span class = "period"></span><span class = "period"></span></div>
-                                <i class="d${activities[a].index}  fa-regular fa-pen-to-square edit"></i>
-                                <i id = "d${activities[a].index}" class="fa-regular fa-trash-can trash"></i>
+                                <i class="d${activities[a].index}  fa-regular fa-pen-to-square modify"></i>
+                                <i id = "d${activities[a].index}" class="fa-regular fa-trash-can bin"></i>
                                 `;
       activitiesArea.appendChild(activityContainer[a]);
+    } else if (activities[a].description !== '' && activities[a].completed) {
+      activityContainer[a].innerHTML = `<div class = "activity-description-area hrzntl">
+      <input class = "confirmChoice${activities[a].index} mark-activity" type = "checkbox" checked>
+      <p class = "d${activities[a].index} activity-details">${activities[a].description}</p>
+      </div>
+      <div class = "d${activities[a].index} display-periods period-container flex-column"><span class = "period"></span><span class = "period"></span><span class = "period"></span></div>
+      <i class="d${activities[a].index}  fa-regular fa-pen-to-square modify"></i>
+      <i id = "d${activities[a].index}" class="fa-regular fa-trash-can bin"></i>
+      `;
+      activitiesArea.appendChild(activityContainer[a]);
+      document.querySelector(`.d${activities[a].index}`).style.textDecoration = 'line-through';
     }
     document.querySelector(`.d${activities[a].index}`).contentEditable = true;
   }

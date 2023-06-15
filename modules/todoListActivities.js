@@ -32,7 +32,7 @@ export default class AvailableActivities {
   };
 
   changeActivityState = (activityPosition) => {
-    if(!this.activities[activityPosition - 1].completed) {
+    if (!this.activities[activityPosition - 1].completed) {
       this.activities[activityPosition - 1].completed = true;
       document.querySelector(`p.d${activityPosition}`).style.textDecoration = 'line-through';
     } else if (this.activities[activityPosition - 1].completed) {
